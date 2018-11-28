@@ -1,0 +1,16 @@
+{
+  "name": "k-means",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serverless offline start --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.31.3"
+  },
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "ramda": "^0.26.1"
+  }
+}

@@ -1,0 +1,14 @@
+service: sls_k-means
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  kmeans:
+    handler: k-means.kmeans
+    events:
+    - http: POST /kmeans
+
+plugins:
+- serverless-offline
